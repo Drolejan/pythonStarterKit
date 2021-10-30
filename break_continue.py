@@ -9,11 +9,19 @@ def run():
     #     if i == 5678:
     #         break
 
-    texto = input('Escribe un texto: ')
-    for letra in texto:
-        if letra == 'o':
-            break
-        print(letra)
+    # texto = input('Escribe un texto: ')
+    # for letra in texto:
+    #     if letra == 'o':
+    #         break
+    #     print(letra)
+    contador = 0
+    while contador < 10:
+        if contador == 7:
+            contador += 1
+            continue
+        print(contador)
+        contador += 1
+
 
 
 if __name__ == '__main__':

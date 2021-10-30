@@ -1,7 +1,7 @@
 def run():
-    # nombre = input('Escribe tu nombre: ')
-    # for letra in nombre:
-    #     print(letra)
+    nombre = input('Escribe tu nombre: ')
+    for letra in nombre:
+        print(letra, end='')
 
     frase = input('Escribe una frase: ')
     for caracter in frase:

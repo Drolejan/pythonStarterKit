@@ -1,4 +1,4 @@
-def es_primo(numero):
+def es_primo(numero): # Función que devuelve True si el número es primo, crear otra diferente
     contador = 0
 
     for i in range(1, numero + 1):
@@ -11,10 +11,17 @@ def es_primo(numero):
     else:
         return False
 
+def esPrimo(numero):
+    raiz_cuadrada = numero ** 0.5
+    for i in range(2, int(raiz_cuadrada) + 1):
+        if numero % i == 0:
+            return False
+    return True
+
 
 def run():
     numero = int(input('Escribe un número: '))
-    if es_primo(numero):
+    if esPrimo(numero):
         print('Es primo')
     else:
         print('No es primo')
